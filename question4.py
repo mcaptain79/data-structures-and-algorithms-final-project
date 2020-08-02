@@ -41,7 +41,7 @@ class Heap:
 n = int(input("Please enter n: "))
 k = int(input("Please enter k: "))
 finalList = []
-for i in range(3):
+for i in range(n):
     #getting arrays in once *Please enter numbers with a space between
     initialList = list(map(int,input("Please enter row "+str(i+1)+": ").split()))
     finalList.append(initialList)
@@ -53,7 +53,7 @@ initialList = []
 sum = 0
 #working on it for all values of t less than k
 for t in range(k):
-    for i in range(3):
+    for i in range(n):
         for j in myArray[i]:
             sum += (j+t)%k
         initialList.append(sum)
